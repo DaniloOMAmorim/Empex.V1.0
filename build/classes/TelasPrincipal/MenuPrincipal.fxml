@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #FBF5EF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.MenuPrincipalControle">
+    <stylesheets>
+        <URL value="@/Css/menuprincipal.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="painelbase" layoutX="239.0" layoutY="133.0" prefHeight="500.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="500.0" prefWidth="290.0" style="-fx-background-color: #FF8F00;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-3.0" layoutY="-1.0" prefHeight="500.0" prefWidth="289.0" style="-fx-background-color: #2b3a42;">
+                     <children>
+                        <ImageView blendMode="SRC_ATOP" fitHeight="122.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Empex.V1.0/src/imagem/Capturar.JPG" />
+                           </image>
+                        </ImageView>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#Menup" prefHeight="44.0" prefWidth="289.0" text="Menu principal" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#TelaParticipante" prefHeight="44.0" prefWidth="289.0" text="Participante" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#TelaTrabalho" prefHeight="44.0" prefWidth="289.0" text="Trabalho" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#TelaOrientador" prefHeight="44.0" prefWidth="289.0" text="Orientador" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#TelaExaminador" prefHeight="44.0" prefWidth="289.0" text="Examinador" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" ellipsisString="" onMouseClicked="#TelaRelatorio" prefHeight="44.0" prefWidth="289.0" text="Relatório" textFill="#ff8f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutY="120.0" prefHeight="32.0" prefWidth="289.0" style="-fx-background-color: #2b3a42; -fx-bo: #ff8f00;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="7.0" text="Olá, Danilo.Amorim" textFill="#ff8f00">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton alignment="BOTTOM_LEFT" layoutX="225.0" layoutY="4.0" onMouseClicked="#close" prefHeight="25.0" prefWidth="50.0" text="   Sair" textFill="#ff8f00" />
+                                    <ImageView fitHeight="13.0" fitWidth="14.0" layoutX="228.0" layoutY="10.0" onMouseClicked="#sair" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icones/icons8-sair-100.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Line endX="188.0" layoutX="101.0" layoutY="120.0" startX="-100.0" stroke="#ff8f00" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children></Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
